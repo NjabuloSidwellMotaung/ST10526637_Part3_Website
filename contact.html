@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Desentral Projects & Civil Works</title>
+<meta name="description" content="Contact Desentral Projects & Civil Works — find our coverage areas on the map, call or WhatsApp us, or send a general message through the form below.">
+<meta name="keywords" content="contact Desentral Projects, construction company Johannesburg contact, civil works contact, Ekurhuleni builders contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Site header: logo, main navigation, mobile menu toggle and quick contact links -->
+<header class="site-header">
+  <div class="wrap">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <a href="index.html" class="logo"><img src="images/Logo_1.jpg" alt="Desentral Projects & Civil Works logo" width="100%"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <div class="header-actions">
+      <div class="social-icons">
+        <a href="https://wa.me/27640948066" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.978.573 3.822 1.562 5.373L2 22l4.741-1.539A9.953 9.953 0 0 0 12.001 22C17.523 22 22 17.522 22 12S17.523 2 12.001 2zm0 18.15a8.13 8.13 0 0 1-4.146-1.135l-.297-.176-2.813.914.925-2.741-.194-.283A8.14 8.14 0 1 1 20.14 12a8.15 8.15 0 0 1-8.139 8.15z"/></svg>
+        </a>
+      </div>
+      <a href="tel:+27640948066" class="header-call">064 094 8066</a>
+    </div>
+  </div>
+</header>
+<!-- Decorative yellow/black hazard-stripe divider under the header -->
+<div class="hazard"></div>
+<main>
+
+<!-- Page banner: heading and intro line for the Contact page -->
+<section class="page-banner">
+  <div class="wrap">
+    <span class="section-eyebrow">Get in touch</span>
+    <h1>Find us, call us, or write to us</h1>
+    <p>We work across two main areas of the greater Johannesburg region — see them both on the map below — and we're reachable by phone, WhatsApp, email or the message form on this page.</p>
+  </div>
+</section>
+
+<!-- Interactive Leaflet map showing both coverage areas -->
+<section class="map-section">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p>Desentral Projects &amp; Civil Works takes on jobs across both markers shown below — our Johannesburg base and our Ekurhuleni service point. Zoom or drag the map to explore the area.</p>
+    <div id="contact-map" class="contact-map" role="application" aria-label="Map showing Desentral Projects coverage areas in Johannesburg and Ekurhuleni"></div>
+    <noscript><p class="form-note">Enable JavaScript to view the interactive map. Our two coverage areas are Johannesburg CBD and Kempton Park, Ekurhuleni.</p></noscript>
+  </div>
+</section>
+
+<!-- General contact form (left) alongside direct contact details (right) -->
+<section>
+  <div class="wrap grid grid-2">
+
+    <div>
+      <h2>Send us a message</h2>
+      <form class="quote-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="c-name">Full name</label>
+            <input type="text" id="c-name" name="name" required minlength="2">
+            <span class="field-error" id="c-name-error" role="alert"></span>
+          </div>
+          <div>
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" required>
+            <span class="field-error" id="c-email-error" role="alert"></span>
+          </div>
+        </div>
+
+        <div>
+          <label for="c-type">What is this about?</label>
+          <select id="c-type" name="type" required>
+            <option value="">Choose a message type&hellip;</option>
+            <option>General question</option>
+            <option>Request a quote</option>
+            <option>Compliment / feedback</option>
+            <option>Complaint</option>
+            <option>Supplier / partnership enquiry</option>
+            <option>Careers</option>
+            <option>Other</option>
+          </select>
+          <span class="field-error" id="c-type-error" role="alert"></span>
+        </div>
+
+        <div>
+          <label for="c-message">Your message</label>
+          <textarea id="c-message" name="message" required minlength="10" placeholder="Write your full message here."></textarea>
+          <span class="field-error" id="c-message-error" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <a href="https://wa.me/27640948066" class="btn btn-outline" target="_blank" rel="noopener">
+          Or chat on WhatsApp
+        </a>
+
+        <div class="form-response" id="contact-response" role="status" aria-live="polite" hidden></div>
+
+        <p class="form-note">This form validates your message in the browser and compiles it into an email preview addressed to desentralprojects@gmail.com — there's no server behind it yet, so nothing is actually sent. For a reply right now, call, WhatsApp, or email us directly.</p>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <div class="card">
+        <h3>Phone &amp; WhatsApp</h3>
+        <p><a href="tel:+27640948066">064 094 8066</a></p>
+      </div>
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:desentralprojects@gmail.com">desentralprojects@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Follow us</h3>
+        <p><a href="https://www.facebook.com/Decentral/" target="_blank" rel="noopener">facebook.com/Decentral</a></p>
+      </div>
+      <div class="card">
+        <h3>Coverage areas</h3>
+        <p>Johannesburg CBD and Kempton Park, Ekurhuleni — see the map above.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- Site footer: company blurb, quick links and contact details, repeated on every page -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Desentral Projects &amp; Civil Works</h4>
+        <p>Construction, renovation and civil works across Johannesburg since 2015 — electrical, roofing, waterproofing, tiling, paving and more.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Our projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+27640948066">064 094 8066</a></li>
+          <li><a href="mailto:desentralprojects@gmail.com">desentralprojects@gmail.com</a></li>
+          <li>Johannesburg, South Africa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Desentral Projects &amp; Civil Works. All rights reserved.</span>
+      <span>Student web design project.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/leaflet.js"></script>
+<script src="js/contact-map.js"></script>
+<script src="js/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Desentral Projects & Civil Works</title>
+<meta name="description" content="A look at completed electrical, roofing, waterproofing, tiling and paving projects by Desentral Projects & Civil Works.">
+<meta name="keywords" content="construction projects Johannesburg, roofing projects, bathroom renovation photos, paving projects, electrical installation photos, Desentral Projects gallery">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Site header: logo, main navigation, mobile menu toggle and quick contact links -->
+<header class="site-header">
+  <div class="wrap">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <a href="index.html" class="logo"><img src="images/Logo_1.jpg" alt="Desentral Projects & Civil Works logo" width="100%"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <div class="header-actions">
+      <div class="social-icons">
+        <a href="https://wa.me/27640948066" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.978.573 3.822 1.562 5.373L2 22l4.741-1.539A9.953 9.953 0 0 0 12.001 22C17.523 22 22 17.522 22 12S17.523 2 12.001 2zm0 18.15a8.13 8.13 0 0 1-4.146-1.135l-.297-.176-2.813.914.925-2.741-.194-.283A8.14 8.14 0 1 1 20.14 12a8.15 8.15 0 0 1-8.139 8.15z"/></svg>
+        </a>
+      </div>
+      <a href="tel:+27640948066" class="header-call">064 094 8066</a>
+    </div>
+  </div>
+</header>
+<!-- Decorative yellow/black hazard-stripe divider under the header -->
+<div class="hazard"></div>
+<main>
+
+<!-- Page banner: heading and intro line for the Projects page -->
+<section class="page-banner">
+  <div class="wrap">
+    <span class="section-eyebrow">Our work</span>
+    <h1>Recent projects</h1>
+    <p>Electrical, roofing, waterproofing, tiling, paving and line marking work completed across Johannesburg.</p>
+  </div>
+</section>
+
+<!-- Photo gallery: one <figure class="project-card"> per completed job.
+     The first 8 cards are the original hand-picked highlights; everything
+     after them is the owner's added photos, each tagged by service type
+     (Electrical, Roofing, Bathrooms, Paving, Line marking, etc.) -->
+<section>
+  <div class="wrap">
+
+    <!-- Live search and trade-tag filter for the gallery below -->
+    <div class="gallery-toolbar">
+      <div class="gallery-search">
+        <label for="project-search">Search projects</label>
+        <input type="search" id="project-search" placeholder="Try &ldquo;roof&rdquo;, &ldquo;bathroom&rdquo;, &ldquo;paving&rdquo;&hellip;">
+      </div>
+      <div class="gallery-filters" id="gallery-filters" role="group" aria-label="Filter projects by trade">
+        <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="electrical">Electrical</button>
+        <button type="button" class="filter-btn" data-filter="roofing">Roofing</button>
+        <button type="button" class="filter-btn" data-filter="roof-painting">Roof painting</button>
+        <button type="button" class="filter-btn" data-filter="painting">Painting</button>
+        <button type="button" class="filter-btn" data-filter="waterproofing">Waterproofing</button>
+        <button type="button" class="filter-btn" data-filter="bathrooms">Bathrooms</button>
+        <button type="button" class="filter-btn" data-filter="tiling">Tiling</button>
+        <button type="button" class="filter-btn" data-filter="paving">Paving</button>
+        <button type="button" class="filter-btn" data-filter="line-marking">Line marking</button>
+        <button type="button" class="filter-btn" data-filter="renovations">Renovations</button>
+      </div>
+      <p class="gallery-count" id="gallery-count" aria-live="polite"></p>
+    </div>
+
+    <div class="grid grid-3" id="project-grid">
+
+      <figure class="project-card" data-category="electrical">
+        <img src="images/project-electrical-1.jpg" alt="Distribution board and wiring installation before ceiling closed" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Electrical distribution board</h3>
+          <p>First-floor DB installation and wiring, ready for sign-off.</p>
+          <span class="tag">Electrical</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="electrical">
+        <img src="images/project-electrical-2.jpg" alt="Mounted electrical distribution board with warning signage" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>DB board mounting</h3>
+          <p>Fully mounted and signed distribution board, first floor.</p>
+          <span class="tag">Electrical</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roof-painting">
+        <img src="images/project-roof-painting-progress.jpg" alt="Team painting roof tiles on a residential home" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof tile painting</h3>
+          <p>Two-man team applying a fresh coat to a tiled roof.</p>
+          <span class="tag">Roof painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roof-painting">
+        <img src="images/project-roof-painting-finished.jpg" alt="Completed dark grey roof coating on a residential property" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof coating, completed</h3>
+          <p>Finished roof paint job across two adjoining roof sections.</p>
+          <span class="tag">Roof painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/project-roof-tiling.jpg" alt="Roof tile stripping and replacement in progress" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof tile replacement</h3>
+          <p>Stripping old tiles ahead of a full re-tile.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/project-bathroom.jpg" alt="Renovated bathroom with glass-panel walk-in shower" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Bathroom renovation</h3>
+          <p>Walk-in shower, new fittings, floor-to-ceiling tiling.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/project-paving.jpg" alt="Stepping-stone garden walkway with river stone infill" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Garden walkway</h3>
+          <p>Paved stepping-stone path with brick edging and stone infill.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="line-marking">
+        <img src="images/project-line-marking.jpg" alt="Freshly painted parking bay line marking in a retail centre" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Parking line marking</h3>
+          <p>Bay line marking for a retail centre parking lot.</p>
+          <span class="tag">Line marking</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/43283120_2155226591360986_6183182752095928320_n.jpg" alt="Completed double-storey house with balconies and garage" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>New double-storey build, completed</h3>
+          <p>Full construction and finishing of a modern double-storey home.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/472390464_3837961933087435_6021393584325800713_n.jpg" alt="Tiled-roof house with new brick paving driveway" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Tiled roof home with new paving</h3>
+          <p>Completed brick paving driveway alongside a tiled-roof renovation.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/472399429_3837962203087408_7621646350232327107_n.jpg" alt="New PVC panel ceiling with cornice detailing" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Ceiling installation</h3>
+          <p>New PVC panel ceiling with cornicing, ready for final touches.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/472430975_3837962149754080_289048225817301408_n.jpg" alt="Exposed timber roof truss framing above a garage" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof truss framing</h3>
+          <p>Timber roof trusses exposed ahead of ceiling and roof cover installation.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="painting">
+        <img src="images/472620230_3837962133087415_2259945512757919018_n.jpg" alt="Painter working on an exterior wall of a tiled-roof house" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Exterior wall painting</h3>
+          <p>Applying a fresh coat to an exterior wall ahead of a tiled roof.</p>
+          <span class="tag">Painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="painting">
+        <img src="images/472677849_3837962139754081_3605813645779171524_n.jpg" alt="Painter applying weatherproof coating to an exterior wall" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Weatherguard wall coating</h3>
+          <p>Rolling on exterior weatherproof paint, ladder and buckets set up.</p>
+          <span class="tag">Painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="painting">
+        <img src="images/472707546_3837962206420741_647436953496358490_n.jpg" alt="Repainting a house corner with red trim and brick paving" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>House corner repaint</h3>
+          <p>Fascia and wall repaint on a red-trimmed home with brick paving.</p>
+          <span class="tag">Painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/475006733_3853628648187430_6848798115426467734_n.jpg" alt="Landscaped garden with timber fencing and patio" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Garden landscaping</h3>
+          <p>Finished garden with timber fencing, patio and planting.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/475164499_3853628574854104_1875573755173403091_n.jpg" alt="Grey stone stepping-stone pavers being laid in a garden" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Stone paver walkway</h3>
+          <p>Laying grey stepping-stone pavers ahead of grouting.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roof-painting">
+        <img src="images/475808801_1133845915419972_6548129732091765296_n.jpg" alt="Worker hand-painting a corrugated iron roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof coating application</h3>
+          <p>Hand-painting a corrugated iron roof section by section.</p>
+          <span class="tag">Roof painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roof-painting">
+        <img src="images/475879562_1133846078753289_2062061521587413427_n.jpg" alt="Freshly painted light grey corrugated iron roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Freshly coated roof sheeting</h3>
+          <p>Even coverage on a corrugated iron roof.</p>
+          <span class="tag">Roof painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/476356059_1138365458301351_3519316701899283101_n.jpg" alt="Accessible bathroom with walk-in shower and grab rails" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Accessible bathroom fit-out</h3>
+          <p>Walk-in shower and accessible toilet with grab rails, fully tiled.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="painting">
+        <img src="images/476631524_1137928795011684_9116491915971669484_n.jpg" alt="Painter priming a rendered exterior wall" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Exterior wall preparation</h3>
+          <p>Priming and painting a rendered wall with weatherproof coating.</p>
+          <span class="tag">Painting</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="line-marking">
+        <img src="images/477820101_1142977131173517_1724265391600490181_n.jpg" alt="Taped-out pedestrian crossing and lettering on a driveway" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Pedestrian crossing marking</h3>
+          <p>Taped-out zebra crossing and lettering ready for paint.</p>
+          <span class="tag">Line marking</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="line-marking">
+        <img src="images/477991307_1142977197840177_5021975851033432265_n.jpg" alt="Worker painting a zebra crossing in a residential complex" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Crossing line painting</h3>
+          <p>Hand-painting a zebra crossing in a residential complex.</p>
+          <span class="tag">Line marking</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="line-marking">
+        <img src="images/480206294_1142977167840180_7687397521919485136_n.jpg" alt="Measuring parking bay lines in a townhouse complex" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Parking bay measuring</h3>
+          <p>Measuring out bay lines before painting in a townhouse complex.</p>
+          <span class="tag">Line marking</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="line-marking">
+        <img src="images/480249075_1142977247840172_1094956814313929039_n.jpg" alt="Taped EXIT lettering painted on a driveway" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>EXIT lettering</h3>
+          <p>Taped and painted EXIT signage on a driveway.</p>
+          <span class="tag">Line marking</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480284023_3871097529773875_8500832631656499223_n.jpg" alt="Bathroom stripped back to brick ahead of a rebuild" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Bathroom strip-out</h3>
+          <p>Tiles and fittings removed ahead of a full bathroom rebuild.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480297374_3871097743107187_7803454528295298461_n.jpg" alt="New PVC plumbing pipework during a bathroom renovation" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>New plumbing layout</h3>
+          <p>PVC waste pipework laid out during a bathroom renovation.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480356206_3872082699675358_229737544332743704_n.jpg" alt="Frameless glass shower enclosure being fitted in a bathroom" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Frameless shower install</h3>
+          <p>Fitting a frameless glass shower enclosure in a tiled bathroom.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480400223_3871097799773848_5713918492603983744_n.jpg" alt="New bath fitted into a tiled bathroom corner" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Bath re-fit</h3>
+          <p>New bath set into a corner ahead of re-tiling.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/480567845_3876417165908578_8312762317426922744_n.jpg" alt="Structural ceiling grid with conduit before boarding" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Ceiling grid structure</h3>
+          <p>Structural ceiling grid and conduit ahead of board and paint.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480629208_1150469317090965_7746239343188396848_n.jpg" alt="Floating wood vanity with vessel basin on marble tiling" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Floating vanity install</h3>
+          <p>Wood-finish floating vanity with vessel basin, marble tiling.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480766248_1150469547090942_5791473966502965652_n.jpg" alt="Two installers fitting a glass shower panel" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Glass shower panel fitting</h3>
+          <p>Fitting a glass shower panel in a marble-tiled bathroom.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/480995320_1150469333757630_4570518892037982021_n.jpg" alt="Glass shower door installed in a marble-tiled recess" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Glass shower door install</h3>
+          <p>Sliding shower door set into a marble-tiled shower recess.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/485279255_1170902945047602_333748514624071755_n.jpg" alt="Worker finishing a roof dormer with satellite mount" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof dormer finishing</h3>
+          <p>Finishing touches around a roof dormer and satellite mount.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/485305234_1170902948380935_2952375050190238131_n.jpg" alt="Arched bathroom with corner bath and marble-look tiling" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Arched bathroom fit-out</h3>
+          <p>Corner bath, toilet and marble-look tiling under an archway.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="waterproofing">
+        <img src="images/485337649_1172978751506688_4334427415940943779_n.jpg" alt="Worker applying torch-on waterproofing membrane to a flat roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Torch-on waterproofing</h3>
+          <p>Applying a torch-on waterproofing membrane to a flat roof.</p>
+          <span class="tag">Waterproofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="waterproofing">
+        <img src="images/486352133_1175700217901208_457404051744488073_n.jpg" alt="Waterproof sheeting laid along a narrow side passage" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Passage waterproofing</h3>
+          <p>Waterproof sheeting laid along a narrow side passage.</p>
+          <span class="tag">Waterproofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/486358746_1175699797901250_3261784602359316983_n.jpg" alt="Concrete paver walkway with gravel edging in a side passage" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Side passage paving</h3>
+          <p>Concrete paver walkway with gravel edging alongside the house.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="paving">
+        <img src="images/486371193_1175699791234584_8511271400126994670_n.jpg" alt="Concrete slab stepping-stone pathway through a garden" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Garden stepping-stone path</h3>
+          <p>Concrete slab pathway laid through a side garden.</p>
+          <span class="tag">Paving</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/487978278_1183544467116783_4418076532503010997_n.jpg" alt="Finished marble flooring ready for client move-in" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Renovation handover</h3>
+          <p>Finished marble flooring, ready for the client's move-in.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="tiling">
+        <img src="images/488205942_1183544527116777_3333375423611247074_n.jpg" alt="Completed marble-tile staircase and landing" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Marble tiled staircase</h3>
+          <p>Completed marble-tile staircase and landing.</p>
+          <span class="tag">Tiling</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/488710409_1187305486740681_9015133923590722558_n.jpg" alt="Built-in shelving in a new walk-in closet" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Fitted walk-in closet</h3>
+          <p>Built-in shelving and hanging space in a new walk-in closet.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/488860322_1187305566740673_4654806542743556873_n.jpg" alt="Completed lounge renovation with furnishing" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Finished living space</h3>
+          <p>Completed lounge renovation, ready for furnishing.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="tiling">
+        <img src="images/488862645_1187305490074014_2139432000497691568_n%20(1).jpg" alt="Wood-look laminate flooring laid with spacers" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Laminate floor installation</h3>
+          <p>Wood-look laminate flooring laid with spacers before grouting.</p>
+          <span class="tag">Tiling</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/490307425_1190994356371794_2741517613228573670_n.jpg" alt="Worker pointing roof tile ridges on a residential roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof tile pointing</h3>
+          <p>Sealing and pointing roof tile ridges on a residential roof.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/569424438_1362237229247505_3114067183485552254_n.jpg" alt="Completed exterior wall with burglar-barred windows" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Exterior wall finish</h3>
+          <p>Completed exterior wall with burglar-barred windows.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/570413827_1362237735914121_2931335470683465392_n%20(1).jpg" alt="New room extension with roof tiling underway" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Room addition in progress</h3>
+          <p>New room extension with roof tiling underway.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/571185577_1362237529247475_2716318453013922667_n.jpg" alt="New roof trusses being installed over a wall extension" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof truss extension</h3>
+          <p>New roof trusses going up over a wall extension.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/571304586_1362237762580785_4456145032629419616_n.jpg" alt="New gutters and downpipe fitted on a repainted gable" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Gutter and downpipe fitting</h3>
+          <p>New gutters and downpipe installed on a repainted gable.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="tiling">
+        <img src="images/615512880_1432602952210932_1375898331029592028_n.jpg" alt="Large-format marble-look tiling in a new bathroom" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Marble bathroom tiling</h3>
+          <p>Large-format marble-look tiling in a new bathroom.</p>
+          <span class="tag">Tiling</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/616816997_1432602822210945_1062270128833530746_n.jpg" alt="Frameless glass shower panel in a marble-tiled bathroom" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Glass shower enclosure</h3>
+          <p>Frameless glass shower panel in a marble-tiled bathroom.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="renovations">
+        <img src="images/631473999_1453757300095497_2680012533196892680_n.jpg" alt="Fitted kitchen cupboards with countertop and sink" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Kitchen cabinetry install</h3>
+          <p>Fitted kitchen cupboards, countertop and sink installation.</p>
+          <span class="tag">Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="waterproofing">
+        <img src="images/636780438_1462405545897339_3442082765272309290_n.jpg" alt="Torch-on waterproofing membrane applied to a flat roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Flat roof waterproofing</h3>
+          <p>Torch-on waterproofing membrane being applied to a flat roof.</p>
+          <span class="tag">Waterproofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roofing">
+        <img src="images/637358707_1462405775897316_7433611522282720685_n.jpg" alt="Pointing and capping tiled roof ridges" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof tile ridge capping</h3>
+          <p>Pointing and capping tiled roof ridges.</p>
+          <span class="tag">Roofing</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/648632060_1478517957619431_5461428474396827862_n.jpg" alt="Black rain shower head and mixer set into marble tiling" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Rain shower fitting</h3>
+          <p>Black rain shower head and mixer set into marble tiling.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/648819692_1478517994286094_6804419371623428507_n.jpg" alt="Freestanding oval bath with chrome fittings" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Freestanding bath install</h3>
+          <p>Freestanding oval bath with chrome fittings, marble surround.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="bathrooms">
+        <img src="images/650212782_1478518027619424_2496741617765459940_n.jpg" alt="Freestanding bath and toilet suite in a marble-tiled bathroom" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Bathroom suite fit-out</h3>
+          <p>Freestanding bath and toilet suite in a marble-tiled bathroom.</p>
+          <span class="tag">Bathrooms</span>
+        </figcaption>
+      </figure>
+
+      <figure class="project-card" data-category="roof-painting">
+        <img src="images/After.jpg" alt="Aerial view of a freshly painted corrugated iron roof" class="project-photo" loading="lazy">
+        <figcaption>
+          <h3>Roof painting, completed</h3>
+          <p>Aerial view of a freshly painted corrugated iron roof.</p>
+          <span class="tag">Roof painting</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call-to-action band prompting visitors to request a quote -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have a similar job in mind?</h2>
+    <a href="enquiry.html" class="btn btn-outline">Get a quote</a>
+  </div>
+</section>
+
+<!-- Lightbox: hidden by default, filled in and shown by lightbox.js when a
+     gallery photo is clicked. Lets visitors view a project photo full-size
+     without leaving the page. -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-backdrop" data-lightbox-close></div>
+  <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Project photo viewer">
+    <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close photo viewer">&times;</button>
+    <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <img src="" alt="" id="lightbox-image">
+    <button type="button" class="lightbox-next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+</div>
+
+<!-- Site footer: company blurb, quick links and contact details, repeated on every page -->
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Desentral Projects &amp; Civil Works</h4>
+        <p>Construction, renovation and civil works across Johannesburg since 2015 — electrical, roofing, waterproofing, tiling, paving and more.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Our projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+27640948066">064 094 8066</a></li>
+          <li><a href="mailto:desentralprojects@gmail.com">desentralprojects@gmail.com</a></li>
+          <li>Johannesburg, South Africa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Desentral Projects &amp; Civil Works. All rights reserved.</span>
+      <span>Student web design project.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/gallery-filter.js"></script>
+<script src="js/lightbox.js"></script>
+</body>
+</html>

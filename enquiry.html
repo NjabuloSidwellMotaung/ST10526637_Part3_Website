@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquire About a Service | Desentral Projects & Civil Works</title>
+<meta name="description" content="Send Desentral Projects & Civil Works an enquiry about electrical, roofing, waterproofing, tiling, paving or renovation work in Johannesburg — get a quote or ask a question.">
+<meta name="keywords" content="construction quote Johannesburg, electrical enquiry, roofing quote, renovation enquiry, Desentral Projects enquiry">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Site header: logo, main navigation, mobile menu toggle and quick contact links -->
+<header class="site-header">
+  <div class="wrap">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <a href="index.html" class="logo"><img src="images/Logo_1.jpg" alt="Desentral Projects & Civil Works logo" width="100%"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <div class="header-actions">
+      <div class="social-icons">
+        <a href="https://wa.me/27640948066" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.978.573 3.822 1.562 5.373L2 22l4.741-1.539A9.953 9.953 0 0 0 12.001 22C17.523 22 22 17.522 22 12S17.523 2 12.001 2zm0 18.15a8.13 8.13 0 0 1-4.146-1.135l-.297-.176-2.813.914.925-2.741-.194-.283A8.14 8.14 0 1 1 20.14 12a8.15 8.15 0 0 1-8.139 8.15z"/></svg>
+        </a>
+      </div>
+      <a href="tel:+27640948066" class="header-call">064 094 8066</a>
+    </div>
+  </div>
+</header>
+<!-- Decorative yellow/black hazard-stripe divider under the header -->
+<div class="hazard"></div>
+<main>
+
+<!-- Page banner: heading and intro line for the Enquiry page -->
+<section class="page-banner">
+  <div class="wrap">
+    <span class="section-eyebrow">Enquire about a service</span>
+    <h1>Tell us about the job</h1>
+    <p>Fill in the form below and submit it — we'll validate it, work out which team you need, and show you what happens next. You can also tap through to WhatsApp if you'd rather message us directly.</p>
+  </div>
+</section>
+
+<!-- Enquiry form (left) alongside direct contact details (right) -->
+<section>
+  <div class="wrap grid grid-2">
+
+    <div>
+      <h2>Send an enquiry</h2>
+      <form class="quote-form" id="enquiry-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2">
+            <span class="field-error" id="name-error" role="alert"></span>
+          </div>
+          <div>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required pattern="^[0-9+\s\-\(\)]{7,15}$" placeholder="e.g. 064 094 8066">
+            <span class="field-error" id="phone-error" role="alert"></span>
+          </div>
+        </div>
+
+        <div>
+          <label for="suburb">Suburb / area</label>
+          <input type="text" id="suburb" name="suburb" required placeholder="e.g. Bedfordview, Tembisa, Kempton Park">
+          <span class="field-error" id="suburb-error" role="alert"></span>
+        </div>
+
+        <div>
+          <label for="service">What do you need done?</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service&hellip;</option>
+            <option>Electrical</option>
+            <option>Roofing</option>
+            <option>Painting / waterproofing</option>
+            <option>Tiling / bathroom renovation</option>
+            <option>Paving / landscaping</option>
+            <option>Line marking</option>
+            <option>Renovation</option>
+            <option>Demolition</option>
+            <option>Other</option>
+          </select>
+          <span class="field-error" id="service-error" role="alert"></span>
+        </div>
+
+        <div>
+          <label for="message">Tell us more about the job</label>
+          <textarea id="message" name="message" required minlength="10" placeholder="Rough size of the job and any timing you have in mind."></textarea>
+          <span class="field-error" id="message-error" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit enquiry</button>
+        <a href="https://wa.me/27640948066?text=Hi%20Desentral%2C%20I%27d%20like%20a%20quote.%20Here%20are%20the%20details%3A%20" class="btn btn-outline" target="_blank" rel="noopener">
+          Or chat on WhatsApp
+        </a>
+
+        <div class="form-response" id="enquiry-response" role="status" aria-live="polite" hidden></div>
+
+        <p class="form-note">This form validates and processes your enquiry in the browser — there's no server behind it, so nothing is actually emailed yet. The response below is a real, computed preview of what you'd get once that's wired up; for a reply right now, use the WhatsApp button.</p>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <div class="card">
+        <h3>Phone &amp; WhatsApp</h3>
+        <p><a href="tel:+27640948066">064 094 8066</a></p>
+      </div>
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:desentralprojects@gmail.com">desentralprojects@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>Follow us</h3>
+        <p><a href="https://www.facebook.com/Decentral/" target="_blank" rel="noopener">facebook.com/Decentral</a></p>
+      </div>
+      <div class="card">
+        <h3>Coverage area</h3>
+        <p>Johannesburg and greater Ekurhuleni, South Africa.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Site footer: company blurb, quick links and contact details, repeated on every page -->
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Desentral Projects &amp; Civil Works</h4>
+        <p>Construction, renovation and civil works across Johannesburg since 2015 — electrical, roofing, waterproofing, tiling, paving and more.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Our projects</a></li>
+          <li><a href="enquiry.html">Enquire</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+27640948066">064 094 8066</a></li>
+          <li><a href="mailto:desentralprojects@gmail.com">desentralprojects@gmail.com</a></li>
+          <li>Johannesburg, South Africa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Desentral Projects &amp; Civil Works. All rights reserved.</span>
+      <span>Student web design project.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/form-validation.js"></script>
+</body>
+</html>
