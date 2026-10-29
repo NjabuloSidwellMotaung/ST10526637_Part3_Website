@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 
-Sitemap: https://njabulosidwellm.github.io/desentral-projects/sitemap.xml
+Sitemap: https://njabulosidwellmotaung.github.io/ST10526637_Part3_Website/sitemap.xml
